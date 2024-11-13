@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script type="module" src="/js/scrape.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div id="header-left">
+            <h1 class="title">Screenshot Tool</h1>
+        </div>
+        <div id="header-right">
+            <ul>
+                <li id="dashboard-tab" class="tab">
+                    <a href="popup.html">Screenshots</a>
+                </li>
+                <li id="scrape-tab" class="tab tab-selected">
+                    <a href="scrape.html">Scraper</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="scrape-container">
+            <div class="scrape-header">
+                <h2>Scraped Images</h2>
+                <div class="scrape-controls">
+                    <button class="action-btn" id="downloadAllScraped">Download All</button>
+                    <button class="action-btn" id="clearScraped">Clear All</button>
+                </div>
+            </div>
+            <div id="scrapedImagesContainer" class="scraped-images-grid"></div>
+        </div>
+    </div>
+</body>
+</html> 

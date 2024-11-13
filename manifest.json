@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "0Screenshot Extension",
+  "version": "1.0",
+  "description": "Take and manage screenshots",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "downloads",
+    "contextMenus"
+  ],
+  "action": {
+    "default_popup": "html/popup.html"
+  },
+  "background": {
+    "service_worker": "js/background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["js/content-script.js"]
+    }
+  ],
+  "web_accessible_resources": [{
+    "resources": [
+      "lib/jszip.min.js",
+      "lib/html2canvas.min.js"
+    ],
+    "matches": ["<all_urls>"]
+  }]
+} 

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script type="module" src="/js/popup.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div id="header-left">
+            <h1 class="title">Screenshot Tool</h1>
+        </div>
+        <div id="header-right">
+            <ul>
+                <li id="dashboard-tab" class="tab tab-selected">
+                    <a href="popup.html">Screenshots</a>
+                </li>
+                <li id="scrape-tab" class="tab">
+                    <a href="scrape.html">Scraper</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="button-container">
+            <button class="action-btn" id="snipBtn">Area Snip</button>
+            <button class="action-btn" id="fullSnipBtn">Full Screen</button>
+            <button class="action-btn" id="downloadAllBtn">Download All</button>
+            <button class="action-btn" id="clearBtn">Clear All</button>
+        </div>
+        <div id="screenshotContainer" class="screenshot-container"></div>
+    </div>
+    <div class="footer">
+        <div class="screenshot-count">
+            Total Screenshots: <span id="screenshotCount">0</span>
+        </div>
+        <div class="storage-meter">
+            <div class="storage-bar" id="storageBar"></div>
+            <span class="storage-text" id="storageText"></span>
+        </div>
+    </div>
+    <div id="previewContainer" class="preview-container">
+        <div class="preview-content">
+            <span class="close-preview">&times;</span>
+            <img id="previewImage" src="" alt="Preview">
+        </div>
+    </div>
+    
+</body>
+</html> 
